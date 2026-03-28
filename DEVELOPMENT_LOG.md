@@ -84,16 +84,16 @@ Document your development process as you work on the assignment. Add entries sho
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**: 
+### Entry 5 - [March 26, 2026, 7:30PM]
+**What I did**: Implemented Feature 3: Waiting time tracking and summary
 
-**Details**: 
+**Details**: Calculated waiting time for each process and displayed a summary of results after execution
 
-**Challenges**: 
+**Challenges**:  Faced an issue with committing changes (commit was not saved)
 
-**Solution**: 
+**Solution**: Reviewed Git commands and ensured files were added before committing, then retried successfully
 
-**Time spent**: 
+**Time spent**: 2 hours
 
 ---
 
