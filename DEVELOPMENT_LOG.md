@@ -58,16 +58,16 @@ Document your development process as you work on the assignment. Add entries sho
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**: 
+### Entry 3 - [March 24, 2026, 5:15 PM]
+**What I did**:  Implemented Feature 1: Added priority field to Process class
 
-**Details**: 
+**Details**: Modified the Process class by adding a priority attribute to support scheduling logic in the system
 
-**Challenges**: 
+**Challenges**: Difficulty adding the new field without affecting existing code
 
-**Solution**: 
+**Solution**: Carefully updated the Process class and ensured compatibility with the current structure 
 
-**Time spent**: 
+**Time spent**: 2 hours
 
 ---
 
