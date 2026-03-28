@@ -32,16 +32,16 @@ Document your development process as you work on the assignment. Add entries sho
 
 ## Your Development Log:
 
-### Entry 1 - [Date and Time]
-**What I did**: 
+### Entry 1 - [March 22, 2026, 6:30 PM]
+**What I did**: Downloaded the required program for the project
 
-**Details**: 
+**Details**: installed the software and checked system requirements to ensure proper setup before starting the project
 
-**Challenges**: 
+**Challenges**:faced minor difficulty during installation and ensuring compatibility 
 
-**Solution**: 
+**Solution**: followed the installation steps carefully and adjusted settings until it worked properly
 
-**Time spent**: 
+**Time spent**: 1 hour
 
 ---
 
