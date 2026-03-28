@@ -9,7 +9,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Write your answer here. Discuss specific concepts like thread creation, thread states, how threads execute concurrently, what surprised you, etc.]
+[I learned that multithreading means a program can do more than one thing at the same time. At first, it was a bit confusing for me, but I started to understand how threads can run together. I learned that each thread can work independently, but sometimes they need to share data. This made me realize that managing threads is not easy and needs careful thinking. I also learned about different thread states like running and waiting. Overall, it helped me understand how programs can be faster and more efficient.]
 
 ---
 
@@ -17,7 +17,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe the specific challenge. Was it understanding the code? Implementing a feature? Using Git? Explain what made it difficult and how it relates to the course concepts.]
+[The most challenging part for me was understanding how to calculate the waiting time correctly. I had to think a lot about how the processes work and how to connect everything together. I also struggled a bit with Git commits, which made me feel confused at some points. Sometimes the errors in the code took time to fix. This made the assignment harder, but also helped me learn more.]
 
 ---
 
@@ -25,7 +25,9 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe your problem-solving approach. Did you read documentation? Ask for help? Debug systematically? What resources did you use? What strategies worked?]
+[I overcame the challenges by trying to understand the problem step by step. I didn’t try to solve everything at once. I tested my code many times and looked at where the error was coming from. I also checked my notes and the instructions to make sure I understood the requirements. For Git, I repeated the steps slowly until I did it correctly. This helped me feel more confident and improved my understanding.
+
+]
 
 ---
 
@@ -33,7 +35,9 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Give specific examples from real applications you use (web browsers, games, mobile apps, etc.). Explain why threads are useful in those scenarios. Connect to what you learned in this assignment.]
+[I think multithreading is used in many apps we use every day. For example, in mobile apps, one thread can run the app while another handles background tasks. In games, threads are used to make everything run smoothly without lag. I also noticed that web browsers use threads to open multiple tabs at the same time. This makes apps faster and better for users. Now I understand why this concept is important in real life.
+
+]
 
 ---
 
