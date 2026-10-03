@@ -33,6 +33,7 @@ class Process implements Runnable {
      // FEATURE 1: Add priority field (integer 1-10, where 10 is highest)
     private int priority; // Priority of the process (1-10, 10 being highest)
 
+
     // Constructor to initialize the process with name, burst time, and time quantum
     public Process(String name, int burstTime, int timeQuantum) {
         this.name = name;
@@ -152,6 +153,10 @@ class Process implements Runnable {
 }
 
 public class SchedulerSimulation {
+
+ // FEATURE 2: Static counter for context switches
+    // Incremented each time a new process starts running
+    private static int contextSwitchCount = 0;
     public static void main(String[] args) {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
         // This makes your output unique to you - DO NOT forget to change this!
@@ -231,12 +236,18 @@ public class SchedulerSimulation {
             // Get the next thread from the queue (FIFO)
             Thread currentThread = processQueue.poll(); // Dequeues the next thread
             
+              // FEATURE 2: Increment context switch counter when a new process starts running
+            contextSwitchCount++;
+            
+            // Retrieve the process associated with the thread from the map
+            Process process = processMap.get(currentThread);
+
             // Print the current process queue (list of process IDs in the queue)
             System.out.println(Colors.BOLD + Colors.MAGENTA + "┌─ Ready Queue " + "─".repeat(65) + Colors.RESET);
             System.out.print(Colors.MAGENTA + "│ " + Colors.RESET + Colors.BRIGHT_WHITE + "[" + Colors.RESET);
             int queueCount = 0;
             for (Thread thread : processQueue) {
-                Process process = processMap.get(thread);
+                 process = processMap.get(thread);
                 if (queueCount > 0) System.out.print(Colors.WHITE + " → " + Colors.RESET);
                 System.out.print(Colors.BRIGHT_CYAN + process.getName() + Colors.RESET);
                 queueCount++;
@@ -258,8 +269,8 @@ public class SchedulerSimulation {
             }
             
             // Retrieve the process associated with the thread from the map
-            Process process = processMap.get(currentThread);
-            
+              process = processMap.get(currentThread);
+        
             // Check if the process is not finished
             if (!process.isFinished()) {
                 // If the process still has remaining time, check if there are more processes in queue
@@ -287,8 +298,26 @@ public class SchedulerSimulation {
         System.out.println(Colors.BOLD + Colors.BRIGHT_GREEN + 
                           "╚════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
-    }
     
+    // FEATURE 2: Display total context switches at the end of simulation
+        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
+                          "╔══════════════════════════════════════════════════════════════════════════════════╗" + 
+                          Colors.RESET);
+        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET + 
+                          Colors.BG_BLUE + Colors.BRIGHT_WHITE + Colors.BOLD + 
+                          "                        SCHEDULER STATISTICS                                     " + 
+                          Colors.RESET + Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET);
+        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
+                          "╠══════════════════════════════════════════════════════════════════════════════════╣" + 
+                          Colors.RESET);
+        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET + 
+                          Colors.CYAN + "  🔄 Total Context Switches: " + Colors.RESET + 
+                          Colors.BRIGHT_CYAN + String.format("%-52s", contextSwitchCount) + 
+                          Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET);
+        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
+                          "╚══════════════════════════════════════════════════════════════════════════════════╝" + 
+                          Colors.RESET + "\n"); 
+    } 
     // Method to add a process to the queue and map, while printing a "ready" message
   // FEATURE 1: Updated to display priority in the output message
     public static void addProcessToQueue(Process process, Queue<Thread> processQueue, 
