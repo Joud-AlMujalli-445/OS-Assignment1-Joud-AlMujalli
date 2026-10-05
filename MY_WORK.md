@@ -237,7 +237,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[[l learned that multithreading means a program can do more than one thing at the same time. At first, it was a bit confusing for me, but I started to understand how threads can run together. I learned that each thread can work independently, but sometimes they need to share data. This made me realize that managing threads is not easy and needs careful thinking. I also learned about different thread states like running and waiting. Overall, it helped me understand how programs can be faster and more efficient.]
 
 ## Question 2: What was the most challenging part of this assignment?
 
