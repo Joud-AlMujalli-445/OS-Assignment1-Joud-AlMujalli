@@ -245,7 +245,8 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[The most challenging part for me was understanding how to calculate the waiting time correctly. I had to think a lot about how the processes work and how to connect everything together. I also struggled a bit with Git commits, which made me feel confused at some points.
+Sometimes the errors in the code took time to fix. This made the assignment harder, but also helped me learn more.]
 
 ## Question 3: How did you overcome the challenges you faced?
 
