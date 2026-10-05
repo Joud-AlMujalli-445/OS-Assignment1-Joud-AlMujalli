@@ -295,7 +295,7 @@ Sometimes the errors in the code took time to fix. This made the assignment hard
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[A process is an independent program with its own memory space, while a thread is a smaller part of a process that shares the same memory. Threads are faster and require less overhead compared to processes. In this assignment, we used threads because they are more efficient for simulating multiple tasks within the same program. Threads also make it easier to share data between tasks. In SchedulerSimulation.java, each process was implemented as a thread to simulate CPU scheduling behavior.]
 
 ## Question 2: Ready Queue Behavior
 
