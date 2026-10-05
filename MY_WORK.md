@@ -211,13 +211,13 @@
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [7 hours]
 
-**Most challenging part**:
+**Most challenging part**:Implementing the waiting time calculation and fixing Git commit issues
 
-**Most interesting learning**:
+**Most interesting learning**:Learning how to manage processes and track context switches and waiting time in a system
 
-**What I would do differently next time**:
+**What I would do differently next time**:Start earlier, test features more frequently, and commit changes more regularly to avoid errors
 
 ---
 
