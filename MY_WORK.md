@@ -368,13 +368,14 @@ Ready Queue: [P10 > P11 > P12 > P13 > P14 > P15 > P16 > P17 > P18 > P19 > P20 > 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
-3.
+1. A thread shares memory with its process and is cheaper to create than a process, which is why SchedulerSimulation.java runs each simulated Process on its own Java thread.
+2. In Round-Robin, a process that does not finish within its time quantum (4000ms) is preempted, yields the CPU for a context switch, and is re-queued at the back of the ready queue. For example, P8 (9939ms) was re-queued 2 times before it finished.
+3. A thread moves through the states New, Runnable, Running, Waiting, and Terminated, triggered by calls such as Thread.start(), Thread.sleep(), and Thread.join().
 
 **Concepts I need to study more:**
-1.
-2.
+1. How threads share data safely, including synchronization and race conditions.
+2. How real operating systems choose the time quantum size and balance Round-Robin with priority scheduling.
+
 
 ---
 
