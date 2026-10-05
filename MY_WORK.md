@@ -262,7 +262,8 @@ Sometimes the errors in the code took time to fix. This made the assignment hard
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[l think multithreading is used in many apps we use every day. For example, in mobile apps, one thread can run the app while another handles background tasks. In games, threads are used to make everything run smoothly without lag. I also noticed that web browsers use threads to open multiple tabs at the same time. This makes apps faster and better for users. Now I understand why this concept is important in real life.
+]
 
 ### Optional: What would you like to learn more about?
 
