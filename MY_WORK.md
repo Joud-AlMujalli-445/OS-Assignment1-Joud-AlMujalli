@@ -142,16 +142,16 @@
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - [October 2, 2026, 2:00 PM]
+**What I did**:Created an account and completed registration
 
-**Details**:
+**Details**:Entered user information and verified the account to gain access to the program features
 
-**Challenges**:
+**Challenges**:Had an issue with account activation at first
 
-**Solution**:
+**Solution**:Verified the entered information and retried until the account was successfully activated
 
-**Time spent**:
+**Time spent**:30 minutes
 
 ---
 
