@@ -307,15 +307,21 @@ Sometimes the errors in the code took time to fix. This made the assignment hard
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[In Round-Robin scheduling, when a process does not finish within its time quantum, it is preempted, yields the CPU for a context switch, and is placed at the back of the ready queue to wait for its next turn. In my run (Student ID: 445052144, quantum = 4000ms), P8 has a burst time of 9939ms, so it could not finish in one quantum. It ran 4000ms (5939ms remaining), was re-queued, ran another 4000ms (1939ms remaining), was re-queued again, and then finished on its third turn, so it was re-queued 2 times. Re-queueing matters for fairness because no long process can monopolize the CPU, and every process, including short ones, gets a turn in a regular rotation.]
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+P8 executing quantum [4000ms]
+P9 completed quantum 4000ms | Overall progress: 40%
+Remaining time: 5939ms
+P8 yields CPU for context switch
+
+P8 (Priority: 0) added to ready queue | Burst time: 9939ms
+Ready Queue: [P10 > P11 > P12 > P13 > P14 > P15 > P16 > P17 > P18 > P19 > P20 > P2 > P4 > P6 > P7 > P8] 
 ```
 
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
+[P8 used its full 4000ms quantum but still had 5939ms left, so the scheduler preempted it and added it to the end of the ready queue (P8 is the last item in the Ready Queue). The same thing happened a second time when its remaining time dropped from 5939ms to 1939ms. On its third turn it needed only 1939ms, so it finished without being re-queued again.]
 
 ## Question 3: Thread Lifecycle
 
