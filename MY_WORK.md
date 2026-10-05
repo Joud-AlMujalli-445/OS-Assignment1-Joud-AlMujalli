@@ -181,16 +181,16 @@
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - [October 5, 2026, 7:30 PM]
+**What I did**:Implemented Feature 3: Waiting time tracking and summary
 
-**Details**:
+**Details**: Calculated waiting time for each process and displayed a summary of results after execution
 
-**Challenges**:
+**Challenges**: Faced an issue with committing changes (commit was not saved)
 
-**Solution**:
+**Solution**:Reviewed Git commands and ensured files were added before committing, then retried successfully
 
-**Time spent**:
+**Time spent**:2 hours
 
 ---
 
