@@ -254,7 +254,7 @@ Sometimes the errors in the code took time to fix. This made the assignment hard
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[l overcame the challenges by trying to understand the problem step by step. I didn't try to solve everything at once. I tested my code many times and looked at where the error was coming from. I also checked my notes and the instructions to make sure I understood the requirements. For Git, I repeated the steps slowly until I did it correctly. This helped me feel more confident and improved my understanding.]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
