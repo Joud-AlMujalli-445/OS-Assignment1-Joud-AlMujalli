@@ -349,21 +349,21 @@ Ready Queue: [P10 > P11 > P12 > P13 > P14 > P15 > P16 > P17 > P18 > P19 > P20 > 
 
 **Your Answer:** *(3-5 sentences per example)*
 
-### Example 1 (operating-system level): [Name of scenario]
+### Example 1 (operating-system level): [OS CPU Scheduling for Running Programs]
 
 **Description**:
-[Describe the real-world scenario.]
+[A desktop operating system such as Windows or Linux runs many programs at the same time (browser, music player, code editor) on a limited number of CPU cores. The OS scheduler gives each ready thread a short time slice on the CPU, then preempts it and moves it to the back of the ready queue. In my simulation, each program's thread plays the role of a process (P1 to P20), the OS time slice is the time quantum (4000ms), and the OS switching from one thread to another is the context switch.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[It is fair because every program gets regular CPU time and no heavy program can monopolize the CPU. It is responsive because short interactive tasks, like typing or clicking, get a turn quickly instead of waiting for a long task to finish. It is predictable because with n ready threads and quantum q, each thread waits at most (n-1) x q before its next turn.]
 
-### Example 2: [Name of application/scenario]
+### Example 2: [Web Server Handling Multiple Client Requests]
 
 **Description**:
-[Describe the real-world scenario or application.]
+[A web server receives requests from many users at once, and each request is handled by a worker thread. Instead of finishing one request completely before starting the next, the server shares processing time among the threads in turns. In my simulation, each client request is a process, the time each thread is allowed to run before switching is the time quantum, and moving to the next request's thread is the context switch.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[It is fair because a heavy request (like generating a large report) cannot block small requests from other users. It is responsive because every user sees progress quickly and no one waits for a long time with no response. It is predictable because the maximum waiting time for each request depends on the number of active requests and the quantum size.]
 
 ## Summary
 
