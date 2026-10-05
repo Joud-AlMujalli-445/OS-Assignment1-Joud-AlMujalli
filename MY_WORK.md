@@ -129,16 +129,16 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [October 1, 2026, 5:30 PM]
+**What I did**: Downloaded the required program for the project
 
-**Details**:
+**Details**: Installed the software and checked system requirements to ensure proper setup before starting the project
 
-**Challenges**:
+**Challenges**: Faced minor difficulty during installation and ensuring compatibility
 
-**Solution**:
+**Solution**:Followed the installation steps carefully and adjusted settings until it worked properly
 
-**Time spent**:
+**Time spent**: 1 hour
 
 ---
 
