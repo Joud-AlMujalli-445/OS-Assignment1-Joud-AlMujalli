@@ -312,7 +312,7 @@ Sometimes the errors in the code took time to fix. This made the assignment hard
 Example from my output:
 ```
 P8 executing quantum [4000ms]
-P9 completed quantum 4000ms | Overall progress: 40%
+P8 completed quantum 4000ms | Overall progress: 40%
 Remaining time: 5939ms
 P8 yields CPU for context switch
 
@@ -331,15 +331,15 @@ Ready Queue: [P10 > P11 > P12 > P13 > P14 > P15 > P16 > P17 > P18 > P19 > P20 > 
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: [P1 is in the New state when its Thread object is created in addProcessToQueue() but Thread.start() has not been called yet, so it exists but is not scheduled.]
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: [P1 becomes Runnable when the scheduler loop calls Thread.start() on it (or when it is re-added to the ready queue after its quantum ends), so it is ready to run and only waits for the CPU.]
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: [P1 is Running when it is given the CPU and executes inside run() for its time quantum (4000ms), which is when the console prints "P1 executing quantum".]
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+4. **Waiting**: [P1's thread enters a Timed Waiting state when it calls Thread.sleep() inside run() to simulate execution time, and the main thread is Waiting when it calls P1.join() because it must wait for P1 to finish before continuing.]
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: [P1 is Terminated when run() finishes after its remaining time reaches 0ms, which is when the console prints "P1 finished execution!", and after that join() returns to the main thread.]
 
 ## Question 4: Real-World Applications
 
