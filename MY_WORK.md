@@ -29,17 +29,17 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
+| **Full Name** | [Joud AlMujalli] |
+| **Student ID** | [445052144] |
+| **University Email** | 445052144@std.psau.edu.sa |
+| **GitHub Username** | [Joud-AlMujalli-445] |
 | **Repository Link** | [Paste your repository link here] |
  
 ---
 
 ## 🎥 Video Link
 
-**Video Link**: [Paste your video link here]
+**Video Link**: [https://drive.google.com/file/d/16zn0gl2dzG5C3EGtkemfs4dA1dE93But/view?usp=drivesdk]
 
 > ⚠️ **WARNING:** The video must be **publicly accessible** ("Anyone with the link can view") on **Google Drive**, **YouTube (Unlisted or Public)** or any other cloud file-sharing system. A private, restricted or broken link counts as a **missing video (-1 mark)**.
 >
